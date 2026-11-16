@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SK Group</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+    <img src="images/Krish.jpeg" style="border:3px solid black; width:80px" alt="SK Group logo">
+    <span class="text-white ms-2">SK Group</span>
+    </a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+
+        <!-- Home -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" data-bs-toggle="dropdown">
+            Home
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+            <li class="dropdown-item text-wrap">
+              SK Groups is a professionally managed academic and scholarly publishing imprint operating under Sri Krishna Groups.
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-item text-wrap">
+              We publish high-quality academic, research, and professional knowledge.
+            </li>
+          </ul>
+        </li>
+
+        <!-- Languages -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="langDropdown" data-bs-toggle="dropdown">
+            Languages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="langDropdown">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Telugu</a></li>
+          </ul>
+        </li>
+
+        <!-- Authors -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="authorsDropdown" data-bs-toggle="dropdown">
+            Authors & Books <span class="badge bg-primary">New</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="authorsDropdown">
+            <li><a class="dropdown-item" href="#">Dr. [Author Name] – Professor</a></li>
+            <li><a class="dropdown-item" href="#">Area of Expertise: [Subject]</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Research Scientist</a></li>
+          </ul>
+        </li>
+
+        <!-- Latest Books -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="booksDropdown" data-bs-toggle="dropdown">
+            Latest Books <span class="badge bg-primary">New</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="booksDropdown">
+            <li><a class="dropdown-item" href="#">Book Title 1</a></li>
+            <li><a class="dropdown-item" href="#">Book Title 2</a></li>
+            <li><a class="dropdown-item" href="#">Book Title 3</a></li>
+          </ul>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" data-bs-toggle="dropdown">
+            Contact Us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+            <li><a class="dropdown-item" href="#">Email: info@skgroups.in</a></li>
+            <li><a class="dropdown-item" href="#">Submissions: submissions@skgroups.in</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Mobile: 6303856595</a></li>
+          </ul>
+        </li>
+      </ul>
+  </div>
+</nav>
+</header> 
+<!-- ================= CAROUSEL ================= -->
+<section>
+  <div class="container">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/M.jpg" class="d-block w-100" alt="Slide 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/N.jpg" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/U.jpg" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</section>
+<section>
+      <div class="container"> 
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-6">
+    <h4> About Us</h4>
+    <h1> Sri Krishna Group</h1>
+    <h4>Jangaon, Telangana, India. 
+    </h4>
+    <p class="body-text"> 
+      SK Groups is a professionally managed academic
+and scholarly publishing imprint operating under Sri
+Krishna Groups,a registered partnership firm based in 
+Jangaon,Telangana, India.
+We are dedicated to the publication and dissemination
+of high-quality academic,research, and professional
+knowledge.
+Our objective is to support authors, researchers,
+academicians,institutions,and professional bodies by
+providing a transparent,ethical, and efficient 
+publishing platform that adheres to national and
+international academic standards.
+</p>
+      </div>
+<div class="col-12 col-sm-6 col-md-6">
+  <img src="images/conference.png" class="content-image" alt="Conference">
+</div>
+</div>
+<div class="row align-items-center g-2 mb-4">
+      <div class="col-12 col-sm-6 col-md-6">
+        <h4>Scope of Publishing</h4>
+        <p class="body-text">SK Groups specializes in publishing scholarly and general works in the following domains: Agriculture and Allied Sciences, Biotechnology and Life Sciences, Natural Resource Management, Climate Change and Sustainability, Environmental Sciences, Basic and Applied Sciences, Social Sciences, Education, Humanities, Novels and Fiction, Poetry and Literary Works (English &amp; Telugu).</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6">
+        <img src="images/large.jpg" class="content-image" alt="Large image">
+      </div>
+    </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="subjects-section">
+            <h3 class="subjects-title">Subjects</h3>
+            <p class="subjects-desc text-muted mb-4">Click any subject to view options</p>
+            <div class="subjects-dropdowns d-flex flex-wrap gap-2 justify-content-center">
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="subj1" data-bs-toggle="dropdown" aria-expanded="false">Agriculture and Allied Sciences</button>
+                <ul class="dropdown-menu" aria-labelledby="subj1"><li><a class="dropdown-item" href="#">View books</a></li></ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="subj2" data-bs-toggle="dropdown" aria-expanded="false">Biotechnology and Life Sciences</button>
+                <ul class="dropdown-menu" aria-labelledby="subj2"><li><a class="dropdown-item" href="#">View books</a></li></ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="subj3" data-bs-toggle="dropdown" aria-expanded="false">Natural Resource Management</button>
+                <ul class="dropdown-menu" aria-labelledby="subj3"><li><a class="dropdown-item" href="#">View books</a></li></ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="subj4" data-bs-toggle="dropdown" aria-expanded="false">Climate Change and Sustainability</button>
+                <ul class="dropdown-menu" aria-labelledby="subj4"><li><a class="dropdown-item" href="#">View books</a></li></ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="subj5" data-bs-toggle="dropdown" aria-expanded="false">Environmental Sciences</button>
+                <ul class="dropdown-menu" aria-labelledby="subj5"><li><a class="dropdown-item" href="#">View books</a></li></ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="subj6" data-bs-toggle="dropdown" aria-expanded="false">Basic and Applied Sciences</button>
+                <ul class="dropdown-menu" aria-labelledby="subj6"><li><a class="dropdown-item" href="#">View books</a></li></ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="subj7" data-bs-toggle="dropdown" aria-expanded="false">Social Sciences, Education, and Humanities</button>
+                <ul class="dropdown-menu" aria-labelledby="subj7"><li><a class="dropdown-item" href="#">View books</a></li></ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="subj8" data-bs-toggle="dropdown" aria-expanded="false">Novels and Fiction (English &amp; Telugu)</button>
+                <ul class="dropdown-menu" aria-labelledby="subj8"><li><a class="dropdown-item" href="#">View books</a></li></ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="subj9" data-bs-toggle="dropdown" aria-expanded="false">Poetry and Literary Works (English &amp; Telugu)</button>
+                <ul class="dropdown-menu" aria-labelledby="subj9"><li><a class="dropdown-item" href="#">View books</a></li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Why Choose SK Groups -->
+<section class="content-section bg-light anim-slide-left">
+  <div class="container">
+    <h3 class="section-title text-center mb-4">Why Choose SK Groups</h3>
+    <ul class="body-text list-unstyled">
+      <li class="mb-2">ISBN-allotted academic publications</li>
+      <li class="mb-2">Ethical and plagiarism-checked content</li>
+      <li class="mb-2">Transparent author–publisher agreements</li>
+      <li class="mb-2">Professional editorial and production support</li>
+      <li class="mb-2">Timely publication and dissemination</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="content-section anim-zoom-in">
+  <div class="container text-center">
+    <h3 class="section-title">Publish with Us – Submit Your Manuscript</h3>
+    <a href="#" class="btn btn-info btn-lg text-white mt-3">Submit Your Manuscript</a>
+  </div>
+</section>
+
+<!-- From the desk of Co-founder -->
+<section class="content-section bg-light anim-slide-right">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+        <div class="content-image-placeholder bg-secondary text-white rounded d-flex align-items-center justify-content-center" style="width:150px;height:180px;margin:0 auto;">[Photo and Name]</div>
+        <p class="mt-2 fw-bold">Ms. Chandana Garlapati</p>
+        <p class="text-muted small">Co-founder</p>
+      </div>
+      <div class="col-12 col-md-9">
+        <h4 class="section-title">From the desk of Co-founder (Ms. Chandana Garlapati)</h4>
+        <p class="body-text">At SK Groups, we believe that every idea, story, and poem has the power to inspire, enlighten and endure. Our mission is to create a nurturing platform where authors, researchers and creative minds can share their work with integrity and excellence.</p>
+        <p class="body-text">Whether it is fiction, poetry or academic research we aim to bridge the gap between creators and readers, offering professional editorial support, ethical publishing standards and seamless dissemination. We are proud to support both emerging and established voices, fostering a culture where knowledge, creativity and passion converge to craft lasting legacies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- From the desk of Founder -->
+<section class="content-section anim-fade-up">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-9 order-2 order-md-1">
+        <h4 class="section-title">From the desk of Founder &amp; Managing Partner (Mr. Arun Garlapati)</h4>
+        <p class="body-text">At SK Groups, we are committed to advancing the dissemination of knowledge and fostering a culture of academic and creative excellence. As the Managing Co-Founder, it is my privilege to lead an imprint that supports authors, researchers and creative writers in bringing their work to a global audience with integrity, professionalism and scholarly rigor.</p>
+        <p class="body-text">Our publishing portfolio encompasses peer-reviewed academic research, edited volumes, conference-based books, novels and poetry in English and Telugu, ensuring that both scholarly and creative voices are nurtured and recognized. Every work published under SK Groups undergoes meticulous editorial review, adherence to ethical standards and professional production to maintain the highest quality. We take pride in enabling both emerging and established authors to achieve academic recognition and literary distinction. Our vision is to build a platform where knowledge, creativity, and scholarship converge to create enduring contributions to literature, research and society.</p>
+      </div>
+      <div class="col-12 col-md-3 text-center mb-3 mb-md-0 order-1 order-md-2">
+        <div class="content-image-placeholder bg-secondary text-white rounded d-flex align-items-center justify-content-center" style="width:150px;height:180px;margin:0 auto;">[Photo and Name]</div>
+        <p class="mt-2 fw-bold">Mr. Arun Garlapati</p>
+        <p class="text-muted small">Founder &amp; Managing Partner</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Latest Books -->
+<section class="content-section bg-light anim-slide-up">
+  <div class="container">
+    <h3 class="section-title text-center mb-4">Latest Books</h3>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4 text-center">
+        <div class="content-image-placeholder bg-secondary text-white rounded d-flex align-items-center justify-content-center mb-2" style="width:200px;height:280px;margin:0 auto;">[Book Cover Page]</div>
+        <h5>[Book Title]</h5>
+        <p class="body-text small">Author(s): [Author Name(s)]<br>ISBN: [ISBN Number]<br>Year: [Year]<br>Discipline: [Subject Area]</p>
+        <a href="#" class="btn btn-outline-primary btn-sm">Buy now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT US (extended) -->
+<section class="content-section anim-flip">
+  <div class="container">
+    <h3 class="section-title text-center mb-4">ABOUT US</h3>
+    <p class="body-text">Sri Krishna Groups is a registered partnership firm established with the vision of contributing to education, research, and scholarly communication. The publishing activities of the firm are carried out through its academic imprint, SK Groups.</p>
+    <p class="body-text">SK Groups was founded to meet the increasing demand for credible, ethical, and academically sound publishing avenues in India. We aim to bridge the gap between knowledge creators and knowledge seekers by making scholarly work accessible, reliable, and professionally published.</p>
+    <h4 class="mt-4">Vision</h4>
+    <p class="body-text">To become a trusted and respected academic publishing platform that promotes research excellence and knowledge dissemination.</p>
+    <h4 class="mt-3">Mission</h4>
+    <ul class="body-text">
+      <li>To publish original and high-quality academic and research content</li>
+      <li>To encourage interdisciplinary and applied research</li>
+      <li>To maintain high ethical and editorial standards</li>
+      <li>To support early-career researchers and academicians</li>
+    </ul>
+    <h4 class="mt-3">Core Values</h4>
+    <ul class="body-text">
+      <li>Academic integrity</li>
+      <li>Transparency and fairness</li>
+      <li>Professional excellence</li>
+      <li>Ethical responsibility</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="content-section bg-light anim-bounce">
+  <div class="container">
+    <h3 class="section-title text-center mb-4">PUBLICATIONS</h3>
+    <p class="body-text">SK Groups publishes a wide range of scholarly, academic, and general-interest materials, including but not limited to:</p>
+    <ul class="body-text">
+      <li>Academic textbooks for undergraduate and postgraduate courses</li>
+      <li>Reference books and handbooks</li>
+      <li>Edited volumes and contributed books</li>
+      <li>Books arising out of conferences and seminars</li>
+      <li>Novels, short story collections, and general books</li>
+      <li>Poetry and literary works (English &amp; Telugu)</li>
+      <li>Institutional, departmental, and commemorative publications</li>
+    </ul>
+    <p class="body-text mt-3">Each publication undergoes editorial review, formatting, and quality checks to ensure academic credibility and compliance with publishing norms.</p>
+  </div>
+</section>
+
+<!-- AUTHORS & BOOKS -->
+<section class="content-section anim-fade-in">
+  <div class="container">
+    <h3 class="section-title text-center mb-4">AUTHORS &amp; BOOKS</h3>
+    <h4>Our Authors</h4>
+    <p class="body-text">SK Groups takes pride in collaborating with distinguished academicians, researchers, scientists, and professionals from diverse disciplines. Our authors represent universities, research institutions, and professional organizations across India and abroad. Each author is selected based on academic merit, subject expertise, and commitment to scholarly excellence. We encourage both established scholars and emerging researchers to publish their original work with SK Groups, providing them with a credible platform for academic recognition and dissemination.</p>
+    <h4 class="mt-4">Featured Authors</h4>
+    <div class="row g-3 mt-2">
+      <div class="col-12 col-md-6"><div class="p-3 border rounded"><div class="content-image-placeholder bg-secondary text-white rounded d-inline-block mb-2" style="width:80px;height:100px;">[Photo]</div><p class="body-text mb-0">Dr. [Author Name] – Professor, [University]</p><p class="small text-muted">Area: [Subject]</p></div></div>
+      <div class="col-12 col-md-6"><div class="p-3 border rounded"><div class="content-image-placeholder bg-secondary text-white rounded d-inline-block mb-2" style="width:80px;height:100px;">[Photo]</div><p class="body-text mb-0">Dr./Mr./Ms. [Author Name] – Research Scientist</p><p class="small text-muted">Area: [Subject]</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALL FOR BOOK CHAPTERS -->
+<section class="content-section bg-light anim-slide-left">
+  <div class="container">
+    <h3 class="section-title text-center mb-4">CALL FOR BOOK CHAPTERS (EDITED BOOKS)</h3>
+    <p class="body-text">SK Groups regularly invites original and unpublished book chapters from academicians, researchers, scientists, professionals, and subject experts for inclusion in edited books on contemporary and emerging themes.</p>
+    <h4 class="mt-4">About Edited Books</h4>
+    <p class="body-text">Edited books published by SK Groups are thematic volumes curated by expert editors. Each volume brings together high-quality chapters addressing specific research areas, practical applications, and emerging trends.</p>
+    <h4 class="mt-3">Chapter Submission Guidelines</h4>
+    <ul class="body-text">
+      <li>Chapters must be original, unpublished, and not under consideration elsewhere</li>
+      <li>Plagiarism must be within acceptable academic limits</li>
+      <li>Chapter length: as specified in the individual call</li>
+      <li>Format: MS Word (DOC/DOCX)</li>
+      <li>References must follow a standard academic citation style</li>
+    </ul>
+    <p class="body-text mt-3"><strong>Submission Email:</strong> submissions@skgroups.in</p>
+  </div>
+</section>
+
+<!-- AUTHOR CORNER -->
+<section class="content-section anim-slide-right">
+  <div class="container">
+    <h3 class="section-title text-center mb-4">AUTHOR CORNER</h3>
+    <p class="body-text">SK Groups welcomes manuscript submissions from academicians, researchers, scientists, and professionals from India and abroad.</p>
+    <h4>Author Guidelines</h4>
+    <ul class="body-text">
+      <li>Manuscripts must be original, unpublished, and not under consideration elsewhere</li>
+      <li>All submissions must be plagiarism-free</li>
+      <li>Manuscripts should follow standard academic structure</li>
+      <li>Preferred format: DOC or DOCX</li>
+    </ul>
+    <h4 class="mt-3">Submission</h4>
+    <p class="body-text">Email: skgroups230126@gmail.com</p>
+    <p class="body-text">Required: Author name(s), affiliation(s), contact details, manuscript title, manuscript file (DOC/DOCX), declaration of originality.</p>
+  </div>
+</section>
+
+<!-- CONFERENCES -->
+<section class="content-section bg-light anim-zoom-in">
+  <div class="container">
+    <h3 class="section-title text-center mb-4">CONFERENCES &amp; CONFERENCE-BASED BOOKS</h3>
+    <p class="body-text">SK Groups collaborates with universities, colleges, research institutions, and professional bodies to publish edited books developed through academic conferences, seminars, and workshops. Conference outputs are published only as ISBN-assigned edited books. SK Groups does not publish stand-alone abstract books or souvenirs.</p>
+    <h4 class="mt-3">Publication Ethics</h4>
+    <p class="body-text">SK Groups follows strict ethical publishing standards. Plagiarism, data fabrication, falsification, duplicate submission, or copyright violation is not permitted.</p>
+  </div>
+</section>
+
+<!-- CONTACT US -->
+<section class="content-section anim-fade-up">
+  <div class="container">
+    <h3 class="section-title text-center mb-4">CONTACT US</h3>
+    <p class="body-text text-center">SK Groups – An imprint of Sri Krishna Groups</p>
+    <p class="body-text text-center">Jangaon, Telangana, India</p>
+    <p class="body-text text-center">Email: info@skgroups.in</p>
+    <p class="body-text text-center">Manuscript Submission: submissions@skgroups.in</p>
+    <p class="body-text text-center">Mobile: 6303856595</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4 anim-fade-in">
+  <div class="container text-center">
+    <p class="mb-1">Copyright Policy | Social media links</p>
+    <p class="mb-0">&copy; 2026 SK Groups. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Scroll-triggered section visibility -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('.content-section, footer.bg-dark');
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) entry.target.classList.add('in-view');
+    });
+  }, { threshold: 0.1 });
+  sections.forEach(function(s) { observer.observe(s); });
+});
+</script>
+
+</body>
+</html>

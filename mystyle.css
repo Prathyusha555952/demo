@@ -1,0 +1,170 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Logo */
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 5%;
+}
+
+/* Navbar links */
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: yellow !important;
+}
+
+.nav-link.active {
+  color: yellow !important;
+}
+
+/* Dropdown width */
+.dropdown-menu {
+  max-width: 350px;
+}
+
+/* Simple fade-in animation for carousel captions */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-caption {
+  animation: fadeInUp 0.9s ease-out;
+}
+
+/* Gap between navbar and carousel */
+header + section {
+  margin-top: 20px;
+}
+
+/* Gap below carousel before next content */
+.carousel {
+  margin-bottom: 30px;
+}
+
+/* Carousel images */
+.carousel img {
+  height: 450px;      /* bigger height for desktop */
+  object-fit: cover;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .carousel img {
+    height: 280px;    /* bigger height for mobiles too */
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .carousel img {
+    height: 280px;    /* bigger height for mobiles too */
+  }
+}
+
+.body-text {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Content images (non-carousel) */
+.content-image {
+  max-width: 100%;
+  width: 300px;   /* control size here */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+ }
+.content-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Subjects section - clear and readable */
+.subjects-section {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #e9ecef;
+}
+
+.subjects-title {
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 0.5rem;
+}
+
+.subjects-desc {
+  font-size: 1rem;
+}
+
+.subjects-dropdowns .dropdown .dropdown-menu {
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.subjects-dropdowns .dropdown-item:hover {
+  background-color: #e7f1ff;
+}/* Section animations - trigger on scroll (via .in-view) */
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes flipIn {
+  from { opacity: 0; transform: perspective(400px) rotateY(-15deg); }
+  to { opacity: 1; transform: perspective(400px) rotateY(0); }
+}
+@keyframes bounceIn {
+  from { opacity: 0; transform: scale(0.3); }
+  50% { transform: scale(1.05); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Section blocks */
+.content-section { padding: 2rem 0; opacity: 0; }
+.content-section.in-view { opacity: 1; }
+.content-section.anim-slide-left.in-view { animation: slideInLeft 0.8s ease-out forwards; }
+.content-section.anim-slide-right.in-view { animation: slideInRight 0.8s ease-out forwards; }
+.content-section.anim-fade-up.in-view { animation: fadeInUp 0.8s ease-out forwards; }
+.content-section.anim-zoom-in.in-view { animation: zoomIn 0.7s ease-out forwards; }
+.content-section.anim-fade-in.in-view { animation: fadeIn 0.8s ease-out forwards; }
+.content-section.anim-slide-up.in-view { animation: slideUp 0.6s ease-out forwards; }
+.content-section.anim-flip.in-view { animation: flipIn 0.8s ease-out forwards; }
+.content-section.anim-bounce.in-view { animation: bounceIn 0.7s ease-out forwards; }
+footer.bg-dark { opacity: 0; }
+footer.bg-dark.in-view { animation: fadeIn 0.8s ease-out forwards; opacity: 1; }
+.section-title { font-weight: 600; margin-bottom: 1rem; color: #212529; }
